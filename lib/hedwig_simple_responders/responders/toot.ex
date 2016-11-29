@@ -1,4 +1,4 @@
-defmodule HedwigResponders.Responders.Toot do
+defmodule HedwigSimpleResponders.Responders.Toot do
   @moduledoc """
   Toot Toot!
   """

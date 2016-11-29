@@ -1,4 +1,4 @@
-defmodule HedwigResponders.Responders.Manatee do
+defmodule HedwigSimpleResponders.Responders.Manatee do
   @moduledoc """
   Calming Manatee
 

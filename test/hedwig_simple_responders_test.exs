@@ -1,6 +1,6 @@
-defmodule HedwigRespondersTest do
+defmodule HedwigSimpleRespondersTest do
   use ExUnit.Case
-  doctest HedwigResponders
+  doctest HedwigSimpleResponders
 
   test "the truth" do
     assert 1 + 1 == 2

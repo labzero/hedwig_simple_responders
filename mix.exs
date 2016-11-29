@@ -1,8 +1,8 @@
-defmodule HedwigResponders.Mixfile do
+defmodule HedwigSimpleResponders.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :hedwig_responders,
+    [app: :hedwig_simple_responders,
      version: "0.1.0",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
@@ -19,7 +19,7 @@ defmodule HedwigResponders.Mixfile do
         :hedwig,
         :logger
       ],
-      mod: {HedwigResponders, []}
+      mod: {HedwigSimpleResponders, []}
     ]
   end
 
@@ -31,15 +31,15 @@ defmodule HedwigResponders.Mixfile do
 
   defp description do
     """
-    A Mopidy responder for Hedwig
+    A collection of simple responders for Hedwig
     """
   end
 
   defp package do
     [
-      maintainers: ["Tres Trantham"],
+      maintainers: ["Brien Wankel", "Rob Adams"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/trestrantham/hedwig_mopidy"}
+      links: %{"GitHub" => "https://github.com/labzero/hedwig_simple_responders"}
     ]
   end
 end

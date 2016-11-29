@@ -1,1 +1,1 @@
-# hedwig_responders
+# hedwig_simple_responders
