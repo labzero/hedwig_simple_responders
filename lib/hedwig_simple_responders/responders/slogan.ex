@@ -25,9 +25,4 @@ defmodule HedwigSimpleResponders.Responders.Slogan do
     end
   end
 
-  def terminate(one, two) do
-    IO.inspect one
-    IO.inspect two
-  end
-
 end
