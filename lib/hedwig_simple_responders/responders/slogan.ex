@@ -19,7 +19,7 @@ defmodule HedwigSimpleResponders.Responders.Slogan do
             [{'User-Agent', 'Hedwig (Elixir/#{System.version})'},
             {'Accept', 'application/json'}]}, [], []) do
       {:ok, {_, _, body}} -> 
-        body
+        to_string body
       _ -> 
         "Unable to generate a slogan"
     end
