@@ -25,7 +25,8 @@ defmodule HedwigSimpleResponders.Mixfile do
 
   defp deps do
     [
-      {:hedwig, "~> 1.0"}
+      {:hedwig, "~> 1.0"},
+      {:flip_text, "~> 0.1"}
     ]
   end
 
