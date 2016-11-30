@@ -12,7 +12,7 @@ defmodule HedwigSimpleResponders.ShipIt do
       %{opts: %{extra_squirrels: true}} = state
       shipit message
     rescue
-      e in MatchError ->
+      _ in MatchError ->
         Regex.match?(~r/ship\s*it/i, message.text) && shipit(message) || :ok
     end
   end
