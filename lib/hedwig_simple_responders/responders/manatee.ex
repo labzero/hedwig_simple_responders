@@ -9,7 +9,7 @@ defmodule HedwigSimpleResponders.Responders.Manatee do
   use Hedwig.Responder
 
   @usage """
-  <text> - Uses computer technology to automatically detect sad employees and tries to cheer them up
+  calming manatee - Uses computer technology to automatically detect sad employees and tries to cheer them up
   """
   hear ~r/calm down|calm it down|stay calm|manatee/i, msg do
     send msg, randomManatee

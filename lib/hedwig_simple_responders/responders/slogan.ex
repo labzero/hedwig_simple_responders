@@ -7,7 +7,7 @@ defmodule HedwigSimpleResponders.Responders.Slogan do
   @usage """
   slogan <brand> - Generates a slogan for your awesome brand
   """
-  hear ~r/slogan (?<brand>.*)/i, message do
+  hear ~r/^slogan (?<brand>.*)/i, message do
     brand = message.matches["brand"]
     send message, fetch("https://slogan-generator.herokuapp.com/api/slogan/#{brand}")
   end
