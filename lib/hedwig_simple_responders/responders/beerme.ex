@@ -1,6 +1,6 @@
 defmodule HedwigSimpleResponders.Responders.BeerMe do
   @moduledoc """
-  Toot Toot!
+  Beer me!
   """
   use Hedwig.Responder
 
