@@ -1,4 +1,4 @@
-defmodule HedwigSimpleResponders.Responders.BeerMe do
+defmodule HedwigSimpleResponders.BeerMe do
   @moduledoc """
   Beer me!
   """

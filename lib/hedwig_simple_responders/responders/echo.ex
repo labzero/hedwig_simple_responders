@@ -1,4 +1,4 @@
-defmodule HedwigSimpleResponders.Responders.Echo do
+defmodule HedwigSimpleResponders.Echo do
   @moduledoc """
   Simple Hedwig Responder that will echo back to you
   """

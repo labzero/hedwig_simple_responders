@@ -1,4 +1,4 @@
-defmodule HedwigSimpleResponders.Responders.Flip do
+defmodule HedwigSimpleResponders.Flip do
   @moduledoc """
   Flip
 

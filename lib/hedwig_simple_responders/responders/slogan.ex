@@ -1,4 +1,4 @@
-defmodule HedwigSimpleResponders.Responders.Slogan do
+defmodule HedwigSimpleResponders.Slogan do
   @moduledoc """
   Generate a killer slogan
   """
