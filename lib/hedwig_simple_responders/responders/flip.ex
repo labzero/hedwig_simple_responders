@@ -13,4 +13,7 @@ defmodule HedwigSimpleResponders.Responders.Flip do
   hear ~r/^flip (?<text>.*)/i, message do
     send message, "(╯°□°）╯︵ #{FlipText.flip message.matches["text"]}"
   end
+  hear ~r/^unflip (?<text>.*)/i, message do
+    send message, "#{FlipText.flip message.matches["text"]} ノ( º _ ºノ)"
+  end
 end
