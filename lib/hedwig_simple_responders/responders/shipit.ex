@@ -1,4 +1,4 @@
-defmodule HedwigSimpleResponders.Responders.ShipIt do
+defmodule HedwigSimpleResponders.ShipIt do
   @moduledoc """
   Display some squirrel motivation
   """
