@@ -9,7 +9,7 @@ defmodule HedwigSimpleResponders.TroutSlap do
   """
 
   hear ~r/slap me/i, message do
-    emote(%{message | private: %{ responded: true }}, "slaps #{message.user} around a bit with a large trout")
+    emote(message, "slaps #{message.user.name} around a bit with a large trout")
   end
 
   hear ~r/slaps?\s*(.+)/i, message do
