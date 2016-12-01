@@ -12,10 +12,10 @@ defmodule HedwigSimpleResponders.Manatee do
   calming manatee - Uses computer technology to automatically detect sad employees and tries to cheer them up
   """
   hear ~r/calm down|calm it down|stay calm|manatee/i, msg do
-    send msg, randomManatee
+    send msg, random_manatee
   end
 
-  def randomManatee do
+  def random_manatee do
     manatee = :rand.uniform(34)
     "http://calmingmanatee.com/img/manatee#{manatee}.jpg"
   end
