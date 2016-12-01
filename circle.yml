@@ -9,4 +9,5 @@ dependencies:
 
 test:
   override:
+    - mkdir -p $CIRCLE_TEST_REPORTS/test
     - script/ci/tests.sh
