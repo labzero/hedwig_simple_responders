@@ -11,7 +11,7 @@ defmodule HedwigSimpleResponders.TroutSlap do
   hear ~r/^slap me/i, message do
     emote(message, "slaps #{message.user.name} around a bit with a large trout")
   end
-  hear ~r/^slaps me/i, message, do: :ok
+  hear ~r/^slaps me/i, _, do: :ok
   hear ~r/^slaps?\s*(?<target>\w+).*/i, message do
     emote(message, "slaps #{message.matches["target"]} around a bit with a large trout")
   end
