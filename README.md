@@ -1,5 +1,9 @@
 # Hedwig Simple Responders
 
+[![CircleCI](https://circleci.com/gh/labzero/hedwig_simple_responders.svg?style=shield)](https://circleci.com/gh/labzero/hedwig_simple_responders)
+[![Hex.pm](https://img.shields.io/hexpm/v/hedwig_simple_responders.svg)](https://hex.pm/packages/hedwig_simple_responders)
+[![Hex.pm](https://img.shields.io/hexpm/dt/hedwig_simple_responders.svg)](https://hex.pm/packages/hedwig_simple_responders)
+
 A collection of simple responders for use with a Hedwig.Robot chat bot. Heavily inspired by the `hubot-scripts` package for Hubot.
 
 ## Installation
