@@ -23,7 +23,7 @@ defmodule HedwigSimpleResponders.Mixfile do
       {:flip_text, "~> 0.1"},
       {:poison, "~> 3.0"},
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:junit_formatter, "~> 1.2", only: :dev}
+      {:junit_formatter, "~> 1.2", only: :test}
     ]
   end
 
