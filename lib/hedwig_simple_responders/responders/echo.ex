@@ -1,6 +1,6 @@
 defmodule HedwigSimpleResponders.Echo do
   @moduledoc """
-  Simple Hedwig Responder that will echo back to you
+  `echo <text>` - As you would expect, <text> will be echoed back
   """
   use Hedwig.Responder
 

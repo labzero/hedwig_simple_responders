@@ -1,6 +1,6 @@
 defmodule HedwigSimpleResponders.Slogan do
   @moduledoc """
-  Generate a killer slogan
+  `slogan <brand>` - Generate a killer slogan
   """
   use Hedwig.Responder
 
@@ -12,6 +12,7 @@ defmodule HedwigSimpleResponders.Slogan do
     send message, fetch("https://slogan-generator.herokuapp.com/api/slogan/#{brand}")
   end
 
+  @doc false
   defp fetch(url) do
     :inets.start()
     :ssl.start()

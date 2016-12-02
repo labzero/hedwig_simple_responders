@@ -1,6 +1,6 @@
 defmodule HedwigSimpleResponders.Fishpun do
   @moduledoc """
-  Fish Puns
+  `fish` - Reply with a fish pun
   """
   use Hedwig.Responder
 

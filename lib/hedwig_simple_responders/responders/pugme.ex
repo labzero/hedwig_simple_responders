@@ -1,6 +1,10 @@
 defmodule HedwigSimpleResponders.PugMe do
   @moduledoc """
   Sometimes we all need a little pug
+
+  `pug me` - Gimme a pug
+
+  `pug bomb` - Drop it like it's hot
   """
   use Hedwig.Responder
 

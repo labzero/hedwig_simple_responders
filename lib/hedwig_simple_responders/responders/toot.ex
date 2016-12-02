@@ -1,6 +1,6 @@
 defmodule HedwigSimpleResponders.Toot do
   @moduledoc """
-  Toot Toot!
+  `toot` - show some enthusiasm
   """
   use Hedwig.Responder
 

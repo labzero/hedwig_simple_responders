@@ -1,6 +1,6 @@
 defmodule HedwigSimpleResponders.TroutSlap do
   @moduledoc """
-  Something fishy is going on
+  `slap <target>` | `slap me` - get nostalgic for the good old days using mIRC
   """
   use Hedwig.Responder
 

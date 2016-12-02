@@ -1,6 +1,6 @@
 defmodule HedwigSimpleResponders.ShipIt do
   @moduledoc """
-  Display some squirrel motivation
+  `ship it` - Display some squirrel motivation
   """
   use Hedwig.Responder
 
@@ -17,6 +17,7 @@ defmodule HedwigSimpleResponders.ShipIt do
     end
   end
 
+  @doc false
   def shipit(message) do
     squirrels = [
       "http://40.media.tumblr.com/8732a803c04c32dbc04c6cb37add2c44/tumblr_nm3d0o27Rc1urg4cfo1_500.jpg",

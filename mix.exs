@@ -7,7 +7,10 @@ defmodule HedwigSimpleResponders.Mixfile do
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps()]
+     description: description,
+     package: package,
+     deps: deps
+    ]
   end
 
   # Configuration for the OTP application
@@ -25,6 +28,7 @@ defmodule HedwigSimpleResponders.Mixfile do
 
   defp deps do
     [
+      {:ex_doc, ">= 0.0.0", only: :dev},
       {:hedwig, "~> 1.0"},
       {:flip_text, "~> 0.1"},
       {:poison, "~> 3.0"},

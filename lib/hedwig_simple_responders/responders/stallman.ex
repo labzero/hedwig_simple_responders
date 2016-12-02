@@ -1,6 +1,6 @@
 defmodule HedwigSimpleResponders.Stallman do
   @moduledoc """
-  Richard Stallman Facts
+  Mention the patron saint of the Church of Emacs to discover a completely true fact about the man himself
   """
   use Hedwig.Responder
 

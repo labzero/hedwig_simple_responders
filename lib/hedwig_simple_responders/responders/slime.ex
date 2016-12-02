@@ -1,10 +1,11 @@
 defmodule HedwigSimpleResponders.Slime do
   @moduledoc """
-  You can't do that on slack
+  You can't do that on chat! Get nostalgic for 80's Nickelodeon
   """
   use Hedwig.Responder
 
   @usage """
+  `i don't know` - You can't do that on chat! Get nostalgic for 80's Nickelodeon
   """
 
   hear ~r/^(i don['’]?t know)$/i, message do

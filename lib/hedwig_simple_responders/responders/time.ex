@@ -1,6 +1,6 @@
 defmodule HedwigSimpleResponders.Time do
   @moduledoc """
-  Ask Hedwig for the current server time
+  `<your_bot_name> time` Ask your Hedwig.Robot for the current server time
   """
   use Hedwig.Responder
 

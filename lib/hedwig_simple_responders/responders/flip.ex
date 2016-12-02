@@ -1,8 +1,6 @@
 defmodule HedwigSimpleResponders.Flip do
   @moduledoc """
-  Flip
-
-  Attempts to flip text in a meaningful way
+  `flip <text>` | `unflip <text>` - Attemps to flip <text> in a meaningful way
   """
 
   use Hedwig.Responder

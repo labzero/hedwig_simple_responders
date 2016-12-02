@@ -1,11 +1,12 @@
 defmodule HedwigSimpleResponders.BeerMe do
   @moduledoc """
-  Beer me!
+  `beer me` - Request an icy cold beverage
   """
+
   use Hedwig.Responder
 
   @usage """
-  beer me - Grab me a beer
+  beer me - Request an icy cold beverage
   """
 
   @beers [
