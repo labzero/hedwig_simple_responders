@@ -19,11 +19,11 @@ defmodule HedwigSimpleResponders.Mixfile do
 
   defp deps do
     [
-      {:ex_doc, ">= 0.0.0", only: :dev},
       {:hedwig, "~> 1.0"},
       {:flip_text, "~> 0.1"},
       {:poison, "~> 3.0"},
-      {:junit_formatter, "~> 1.2"}
+      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:junit_formatter, "~> 1.2", only: :dev}
     ]
   end
 
