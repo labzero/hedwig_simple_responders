@@ -1,6 +1,6 @@
 %{"earmark": {:hex, :earmark, "1.0.3", "89bdbaf2aca8bbb5c97d8b3b55c5dd0cff517ecc78d417e87f1d0982e514557b", [:mix], []},
-  "ex_doc": {:hex, :ex_doc, "0.14.4", "a0a79a6896075814f4bc6802b74ccbed6549f47cc5ab34c71eaee2303170b8ef", [:mix], [{:earmark, "~> 1.0", [hex: :earmark, optional: false]}]},
-  "flip_text": {:hex, :flip_text, "0.1.0", "a6a7697f10345cae73f0cae34391f0886015c3ca497caa63c6677f3354b74a62", [:mix], []},
+  "ex_doc": {:hex, :ex_doc, "0.14.5", "c0433c8117e948404d93ca69411dd575ec6be39b47802e81ca8d91017a0cf83c", [:mix], [{:earmark, "~> 1.0", [hex: :earmark, optional: false]}]},
+  "flip_text": {:hex, :flip_text, "0.1.2", "668139fd14aa44a24ca95395ae936e9a1ab83e4ed631903aff9f200f60bfc1cb", [:mix], []},
   "hedwig": {:hex, :hedwig, "1.0.0", "effbb160b9b270cb62ac1b2d6041b4ac731a21b0fc048dd2c35840245fdc0f22", [:mix], []},
   "junit_formatter": {:hex, :junit_formatter, "1.2.0", "ddd0be915b11185e332bb103efb14c2edbcd5bbb989ff64c69261c8dbc0d4fba", [:mix], []},
   "poison": {:hex, :poison, "3.0.0", "625ebd64d33ae2e65201c2c14d6c85c27cc8b68f2d0dd37828fde9c6920dd131", [:mix], []}}
