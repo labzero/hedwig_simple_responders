@@ -5,6 +5,9 @@ defmodule HedwigSimpleResponders.BeerMe do
 
   use Hedwig.Responder
 
+  @bot_name "Beer"
+  @bot_emoji ":beer:"
+
   @usage """
   beer me - Request an icy cold beverage
   """

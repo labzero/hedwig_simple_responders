@@ -4,6 +4,10 @@ defmodule HedwigSimpleResponders.Stallman do
   """
   use Hedwig.Responder
 
+  @bot_name "Richard Stallman"
+  @bot_thumbnail "https://a.fsdn.com/allura/p/singingstallman/icon"
+  # also https://pbs.twimg.com/profile_images/406721195/richard_stallman_portrait_280o_normal.jpg
+
   @usage """
   stallman - Reply with an interesting and completely true fact about RMS
   """

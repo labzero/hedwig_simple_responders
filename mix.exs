@@ -19,7 +19,8 @@ defmodule HedwigSimpleResponders.Mixfile do
       applications: [
         :hedwig,
         :logger,
-        :httpoison
+        :httpoison,
+        :timex
       ],
       mod: {HedwigSimpleResponders, []}
     ]
@@ -32,7 +33,9 @@ defmodule HedwigSimpleResponders.Mixfile do
       {:poison, "~> 3.0"},
       {:httpoison, "~> 0.10.0"},      
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:junit_formatter, "~> 1.2", only: :test}
+      {:junit_formatter, "~> 1.2", only: :test},
+      {:timex, "~> 3.0"},
+      {:tzdata, "~> 0.1.8", override: true}
     ]
   end
 

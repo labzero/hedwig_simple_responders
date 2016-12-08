@@ -4,6 +4,9 @@ defmodule HedwigSimpleResponders.ShipIt do
   """
   use Hedwig.Responder
 
+  @bot_name "Squirrel Power"
+  @bot_emoji ":squirrel:"
+
   @usage """
   ship it - Display a motivation squirrel
   """
