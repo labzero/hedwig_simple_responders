@@ -4,10 +4,13 @@ defmodule HedwigSimpleResponders.Time do
   """
   use Hedwig.Responder
 
+  @bot_name "Clock"
+  @bot_emoji ":alarm_clock:"
+
   @usage """
   time - Reply with current time
   """
   respond ~r/time/i, msg do
-    reply msg, "Server time is: #{DateTime.utc_now |> to_string}"
+    send msg, "Server time is: #{DateTime.utc_now |> to_string}"
   end
 end

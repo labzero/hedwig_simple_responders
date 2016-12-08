@@ -8,6 +8,9 @@ defmodule HedwigSimpleResponders.PugMe do
   """
   use Hedwig.Responder
 
+  @bot_name "PugMe"
+  @bot_emoji ":dog:"
+
   @url_random_pug "http://pugme.herokuapp.com/random"
   @url_count_pugs "http://pugme.herokuapp.com/count"
   @url_pug_bomb "http://pugme.herokuapp.com/bomb?count="

@@ -4,6 +4,9 @@ defmodule HedwigSimpleResponders.Echo do
   """
   use Hedwig.Responder
 
+  @bot_name "Echo Chamber"
+  @bot_emoji ":loudspeaker:"
+
   @usage """
   echo <text> - As you would expect, <text> will be echoed back
   """

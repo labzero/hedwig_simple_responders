@@ -4,6 +4,9 @@ defmodule HedwigSimpleResponders.Toot do
   """
   use Hedwig.Responder
 
+  @bot_name "Toot-Toot"
+  @bot_emoji ":ship:"
+
   @usage """
   toot - shows some enthusiasm
   """
@@ -17,8 +20,7 @@ defmodule HedwigSimpleResponders.Toot do
       "http://i.imgur.com/WbHVjlN.jpg",
       "http://i.imgur.com/sAiB5Vc.jpg",
       "http://i.imgur.com/MFBtdDC.jpg",
-      "http://i.imgur.com/HxvCgyK.jpg", 
-      "http://cdn.meme.am/instances/500x/55272718.jpg"
+      "http://i.imgur.com/HxvCgyK.jpg"
     ]
 
     send message, random(toots)
