@@ -3,7 +3,7 @@ defmodule HedwigSimpleResponders.Mixfile do
 
   def project do
     [app: :hedwig_simple_responders,
-     version: "0.1.0",
+     version: "0.1.1",
      elixir: "~> 1.3",
      elixirc_paths: elixirc_paths(Mix.env),     
      build_embedded: Mix.env == :prod,
@@ -19,6 +19,7 @@ defmodule HedwigSimpleResponders.Mixfile do
       applications: [
         :hedwig,
         :logger,
+        :flip_text,
         :httpoison
       ],
       mod: {HedwigSimpleResponders, []}

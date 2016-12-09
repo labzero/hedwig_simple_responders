@@ -6,7 +6,6 @@ dependencies:
     - ~/.mix
     - _build
     - deps
-
 test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/test
