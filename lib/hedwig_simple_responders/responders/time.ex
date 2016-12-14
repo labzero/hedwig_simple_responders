@@ -5,7 +5,7 @@ defmodule HedwigSimpleResponders.Time do
   use Hedwig.Responder
 
   @usage """
-  time - Reply with current time
+  hedwig time - Reply with current time
   """
   respond ~r/time/i, msg do
     reply msg, "Server time is: #{DateTime.utc_now |> to_string}"

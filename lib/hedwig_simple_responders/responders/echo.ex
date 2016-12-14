@@ -5,7 +5,7 @@ defmodule HedwigSimpleResponders.Echo do
   use Hedwig.Responder
 
   @usage """
-  echo <text> - As you would expect, <text> will be echoed back
+  hedwig echo <text> - As you would expect, <text> will be echoed back
   """
   respond ~r/echo (?<text>.*)$/i, msg do
     reply msg, msg.matches["text"]
