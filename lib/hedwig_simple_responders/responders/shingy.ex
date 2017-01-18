@@ -20,7 +20,7 @@ defmodule HedwigSimpleResponders.Shingy do
     "I'm more of a caffeine-free, gluten-free, raw-food sort of guy, but I am able to find something to like in every brand once I hear their story.",
     "Dude, it's a whole other scene, man and it's pizzing.",
     "Embrace always logged in.",
-    "Imagine pictures that exlode",
+    "Imagine pictures that explode",
     "Digital, yeah?",
     "Digital",
     "Is always on always good? 'Always on' is important versus 'always relevant' is more important.",
@@ -47,7 +47,7 @@ defmodule HedwigSimpleResponders.Shingy do
     "Digital."
   ]
 
-  hear ~r/(shingy|shangy)/i, message do
+  hear ~r/\b(shingy|shangy)\b/i, message do
     send message, random(@wisdom)
   end
   hear ~r/^digital$/i, message do
