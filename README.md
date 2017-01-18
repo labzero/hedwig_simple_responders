@@ -14,7 +14,7 @@ Add `hedwig_simple_responders` to your list of dependencies in `mix.exs`:
     def deps do
       [
         {:hedwig, "~> 1.0"},
-        {:hedwig_simple_responders, "~> 0.1.0"}
+        {:hedwig_simple_responders, "~> 0.1.2"}
       ]
     end
     ```

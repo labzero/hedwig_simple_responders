@@ -9,7 +9,7 @@ defmodule HedwigSimpleResponders.Manatee do
   Calming manatee uses advanced computer technology to automatically detect sad or stressed employees and tries to make them feel better
   """
   hear ~r/calm down|calm it down|stay calm|manatee/i, msg do
-    send msg, random_manatee
+    send msg, random_manatee()
   end
 
   @doc false
