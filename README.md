@@ -10,14 +10,14 @@ A collection of simple responders for use with a Hedwig.Robot chat bot. Heavily 
 
 Add `hedwig_simple_responders` to your list of dependencies in `mix.exs`:
 
-    ```elixir
-    def deps do
-      [
-        {:hedwig, "~> 1.0"},
-        {:hedwig_simple_responders, "~> 0.1.2"}
-      ]
-    end
-    ```
+```elixir
+def deps do
+  [
+    {:hedwig, "~> 1.0"},
+    {:hedwig_simple_responders, "~> 0.1.2"}
+  ]
+end
+```
 
 ## Usage
 
