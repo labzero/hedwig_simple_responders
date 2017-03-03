@@ -33,7 +33,8 @@ defmodule HedwigSimpleResponders.Mixfile do
       {:poison, "~> 3.0"},
       {:httpoison, "~> 0.10.0"},      
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:junit_formatter, "~> 1.2", only: :test}
+      {:junit_formatter, "~> 1.2", only: :test},
+      {:credo, "~> 0.5", only: [:dev, :test]}
     ]
   end
 

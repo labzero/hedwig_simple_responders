@@ -5,8 +5,8 @@ defmodule HedwigSimpleResponders.Slogan do
   use Hedwig.Responder
 
   @slogan_endpoint "https://4krgs6alv6.execute-api.us-west-2.amazonaws.com/prod/slogan"
-  @api_client Application.get_env(:hedwig_simple_responders, 
-                                  :raw_api_client, 
+  @api_client Application.get_env(:hedwig_simple_responders,
+                                  :raw_api_client,
                                   HedwigSimpleResponders.RawApiClient)
 
   @usage """
@@ -23,6 +23,4 @@ defmodule HedwigSimpleResponders.Slogan do
     |> URI.encode
     |> @api_client.get
   end
-
-  def terminate(_,_), do: nil
 end

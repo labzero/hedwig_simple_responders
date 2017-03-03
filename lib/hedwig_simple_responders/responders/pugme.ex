@@ -52,7 +52,8 @@ defmodule HedwigSimpleResponders.PugMe do
       true -> wanted_limit
     end
 
-    with {:ok, json} <- @api_client.get(@url_pug_bomb <> Integer.to_string(limit)),
+    url = @url_pug_bomb <> Integer.to_string(limit)
+    with {:ok, json} <- @api_client.get(url),
          {:ok, pugs} <- Map.fetch(json, "pugs") do
       Enum.each pugs, fn pug ->
         send message, pug

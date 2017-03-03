@@ -9,6 +9,7 @@ defmodule HedwigSimpleResponders.JsonApiClient do
   @doc """
   Makes a GET request to a public API endpoint, returning a status tuple.
   """
+  @spec get(String.t()) :: {:ok, map()} | {:error, String.t()}
   def get(url) do
     url
     |> HTTPoison.get()

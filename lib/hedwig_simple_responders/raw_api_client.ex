@@ -4,15 +4,16 @@ defmodule HedwigSimpleResponders.RawApiClient do
   """
 
   @doc false
+  @spec get(String.t()) :: String.t()
   def get(url) do
     :inets.start()
     :ssl.start()
     case :httpc.request(:get, {String.to_charlist(url),
             [{'User-Agent', 'Hedwig (Elixir/#{System.version})'},
             {'Accept', 'application/json'}]}, [], []) do
-      {:ok, {_, _, body}} -> 
+      {:ok, {_, _, body}} ->
         to_string body
-      _ -> 
+      _ ->
         "Unable to get response body"
     end
   end
