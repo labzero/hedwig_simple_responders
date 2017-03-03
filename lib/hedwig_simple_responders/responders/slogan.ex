@@ -5,29 +5,22 @@ defmodule HedwigSimpleResponders.Slogan do
   use Hedwig.Responder
 
   @slogan_endpoint "https://4krgs6alv6.execute-api.us-west-2.amazonaws.com/prod/slogan"
+  @api_client Application.get_env(:hedwig_simple_responders,
+                                  :raw_api_client,
+                                  HedwigSimpleResponders.RawApiClient)
 
   @usage """
   slogan <brand> - Generates a slogan for your awesome brand
   """
   hear ~r/^slogan (?<brand>.*)/i, message do
     brand = message.matches["brand"]
-    send message, fetch(URI.encode("#{@slogan_endpoint}?#{URI.encode_query(%{q: brand})}"))
+    send message, make_slogan(brand)
   end
 
   @doc false
-  defp fetch(url) do
-    :inets.start()
-    :ssl.start()
-    case :httpc.request(:get, {String.to_charlist(url),
-            [{'User-Agent', 'Hedwig (Elixir/#{System.version})'},
-            {'Accept', 'application/json'}]}, [], []) do
-      {:ok, {_, _, body}} -> 
-        body
-        |> to_string
-        |> URI.decode
-      _ -> 
-        "Unable to generate a slogan"
-    end
+  defp make_slogan(brand) do
+    @slogan_endpoint <> "?" <> URI.encode_query(%{q: brand})
+    |> URI.encode
+    |> @api_client.get
   end
-
 end
