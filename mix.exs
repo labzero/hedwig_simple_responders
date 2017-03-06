@@ -20,7 +20,8 @@ defmodule HedwigSimpleResponders.Mixfile do
         :hedwig,
         :logger,
         :flip_text,
-        :httpoison
+        :httpoison,
+        :timex
       ],
       mod: {HedwigSimpleResponders, []}
     ]
@@ -34,7 +35,8 @@ defmodule HedwigSimpleResponders.Mixfile do
       {:httpoison, "~> 0.10.0"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:junit_formatter, "~> 1.2", only: :test},
-      {:credo, "~> 0.5", only: [:dev, :test]}
+      {:credo, "~> 0.5", only: [:dev, :test]},
+      {:timex, "~> 3.0"}
     ]
   end
 
