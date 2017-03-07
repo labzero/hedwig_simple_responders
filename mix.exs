@@ -36,7 +36,8 @@ defmodule HedwigSimpleResponders.Mixfile do
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:junit_formatter, "~> 1.2", only: :test},
       {:credo, "~> 0.5", only: [:dev, :test]},
-      {:timex, "~> 3.0"}
+      {:timex, "~> 3.0"},
+      {:tzdata, "~> 0.5"}
     ]
   end
 
