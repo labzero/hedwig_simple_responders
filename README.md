@@ -4,7 +4,28 @@
 [![Hex.pm](https://img.shields.io/hexpm/v/hedwig_simple_responders.svg)](https://hex.pm/packages/hedwig_simple_responders)
 [![Hex.pm](https://img.shields.io/hexpm/dt/hedwig_simple_responders.svg)](https://hex.pm/packages/hedwig_simple_responders)
 
-A collection of simple responders for use with a Hedwig.Robot chat bot. Heavily inspired by the `hubot-scripts` package for Hubot.
+A collection of simple responders for use with a [Hedwig](https://github.com/hedwig-im/hedwig) chat bot. Heavily inspired by the *hubot-scripts* package for Hubot.
+
+#### Responders
+
+| Responder       | Module                           |
+|-----------------|----------------------------------|
+| Beer Me         | HedwigSimpleResponders.BeerMe    |
+| Calming Manatee | HedwigSimpleResponders.Manatee   |
+| Echo            | HedwigSimpleResponders.Echo      |
+| Fish Pun        | HedwigSimpleResponders.Fishpun   |
+| Flip            | HedwigSimpleResponders.Flip      |
+| Pug Me          | HedwigSimpleResponders.PugMe     |
+| Shingy          | HedwigSimpleResponders.Shingy    |
+| Ship it!        | HedwigSimpleResponders.ShipIt    |
+| Slime           | HedwigSimpleResponders.Slime     |
+| Slogan          | HedwigSimpleResponders.Slogan    |
+| Stallman        | HedwigSimpleResponders.Stallman  |
+| Time            | HedwigSimpleResponders.Time      |
+| Toot!           | HedwigSimpleResponders.Toot      |
+| Trout Slap      | HedwigSimpleResponders.TroutSlap |
+| Uptime          | HedwigSimpleResponders.Uptime    |
+
 
 ## Installation
 
@@ -21,7 +42,7 @@ end
 
 ## Usage
 
-Enable any number of the included responders by adding them to your Hedwig.Robot's config section of `config/config.exs`
+Enable some or all the included responders by adding them to your list of `responders` in `config/config.exs`
 
 ```elixir
 config :my_hedwig_robot, MyHedwigRobot.Robot,
