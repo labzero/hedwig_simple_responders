@@ -20,7 +20,6 @@ defmodule HedwigSimpleResponders.Slogan do
   @doc false
   defp make_slogan(brand) do
     @slogan_endpoint <> "?" <> URI.encode_query(%{q: brand})
-    |> URI.encode
     |> @api_client.get
   end
 end
