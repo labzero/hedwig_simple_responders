@@ -24,7 +24,7 @@ defmodule HedwigSimpleResponders.JonyIve do
   end
 
   defp jony_says do
-    random(s0) <> random(s1) <> random(s2) <> random(s3)
+    random(s0()) <> random(s1()) <> random(s2()) <> random(s3())
   end
 
   defp jony_defines(word) do
