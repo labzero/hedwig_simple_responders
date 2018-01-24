@@ -29,12 +29,12 @@ defmodule HedwigSimpleResponders.Mixfile do
 
   defp deps do
     [
-      {:hedwig, "~> 1.0"},
+      {:hedwig, github: "hedwig-im/hedwig"},
       {:flip_text, "~> 0.1"},
       {:poison, "~> 3.0"},
-      {:httpoison, "~> 0.10.0"},
+      {:httpoison, "~> 1.0"},
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:junit_formatter, "~> 1.2", only: :test},
+      {:junit_formatter, "~> 2.0", only: :test},
       {:credo, "~> 0.5", only: [:dev, :test]},
       {:timex, "~> 3.0"},
       {:tzdata, "~> 0.5"}
