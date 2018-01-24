@@ -29,7 +29,7 @@ defmodule HedwigSimpleResponders.Mixfile do
 
   defp deps do
     [
-      {:hedwig, github: "hedwig-im/hedwig"},
+      {:hedwig, "~> 1.0"},
       {:flip_text, "~> 0.1"},
       {:poison, "~> 3.0"},
       {:httpoison, "~> 1.0"},
